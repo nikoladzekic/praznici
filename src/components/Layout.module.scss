@@ -1,0 +1,193 @@
+.wrapper {
+  max-width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+
+  color: var(--font-color);
+
+  .holidaySelect {
+    outline: none;
+    border: 1px solid var(--font-color);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    max-width: 300px;
+    background-color: transparent;
+    color: var(--font-color);
+
+    option {
+      background: var(--background-color);
+    }
+  }
+
+  .addMeal {
+    cursor: pointer;
+    text-align: right;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .editingMeal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h4 {
+      margin-bottom: 10px;
+      padding: 0;
+    }
+    .inputSection {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      .regularInput,
+      .smallInput {
+        outline: none;
+        border: 1px solid var(--font-color);
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 15px;
+        max-width: 250px;
+        background: transparent;
+        color: var(--font-color);
+      }
+      .smallInput {
+        max-width: 100px;
+        font-size: 15px;
+      }
+
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .colorPickerActivator {
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    font-size: 20px;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    color: #000;
+    z-index: 10;
+  }
+
+  .colorPicker {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 200px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    padding: 20px;
+    transition: 0.5s ease;
+    box-shadow: -30px 15px 25px 1px rgba(78, 78, 78, 0.4);
+    border-radius: 0px 0px 10px;
+    color: #000;
+    z-index: 10;
+
+    h1 {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .colorContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+      input {
+        width: 50px;
+        height: 50px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        &::-webkit-color-swatch {
+          border-radius: 20px;
+        }
+        &::-moz-color-swatch {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  .button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    button, a {
+      background: var(--font-color);
+      padding: 10px 20px;
+      font-size: 20px;
+      outline: none;
+      border: none;
+      color: var(--background-color);
+      border-radius: 20px;
+      transition: 0.5s ease;
+      cursor: pointer;
+      position: relative;
+      border: 1px solid black;
+      z-index: 5;
+      text-decoration: none;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 1px;
+        background: var(--background-color);
+        bottom: 8px;
+        left: 15%;
+        transition: width 0.3s ease;
+      }
+
+      &:hover {
+        box-shadow: -5px 5px 10px 0px var(--font-color);
+
+        &:after {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  hr {
+    height: 3px;
+    background: var(--font-color);
+    border: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 10px 20px 0px 30px;
+
+    .button {
+      button {
+        white-space: nowrap;
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.wrapper {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  .headerWrapper {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 200px;
+    gap: 10px;
+    margin: 0;
+    user-select: none;
+    align-items: center;
+    cursor: pointer;
+
+    h2 {
+      text-align: start;
+      padding: 0;
+      margin: 0;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    transition: height 0.8s ease;
+    max-height: 0;
+    visibility: hidden;
+    margin: 0;
+    padding-left: 20px;
+
+    .addProduct {
+      font-weight: bold;
+      cursor: pointer;
+      text-align: right;
+      text-transform: uppercase;
+      margin-top: 30px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .editingProduct {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .inputSection{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        .regularInput, .smallInput {
+          outline: none;
+          border: 1px solid var(--font-color);
+          border-radius: 10px;
+          padding: 5px 10px;
+          font-size: 15px;
+          max-width: 250px;
+          background: transparent;
+          color: var(--font-color);
+        }
+        .smallInput {
+          max-width: 100px;
+          font-size: 15px;
+        }
+
+        svg {
+          cursor: pointer;
+        }
+      }
+
+    }
+
+    &.active {
+      max-height: 100%;
+      visibility: visible;
+    }
+  }
+}
+
+@media (max-width: 700px){
+  .wrapper {
+    .inputSection {
+      flex-direction: column;
+    }
+  }
+}
