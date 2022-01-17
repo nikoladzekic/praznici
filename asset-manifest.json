@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/praznici/static/css/main.cfe3171d.chunk.css",
+    "main.js": "/praznici/static/js/main.a4754a47.chunk.js",
+    "main.js.map": "/praznici/static/js/main.a4754a47.chunk.js.map",
+    "runtime-main.js": "/praznici/static/js/runtime-main.2502ecd9.js",
+    "runtime-main.js.map": "/praznici/static/js/runtime-main.2502ecd9.js.map",
+    "static/css/2.f4c56af9.chunk.css": "/praznici/static/css/2.f4c56af9.chunk.css",
+    "static/js/2.7cf6a992.chunk.js": "/praznici/static/js/2.7cf6a992.chunk.js",
+    "static/js/2.7cf6a992.chunk.js.map": "/praznici/static/js/2.7cf6a992.chunk.js.map",
+    "index.html": "/praznici/index.html",
+    "static/css/2.f4c56af9.chunk.css.map": "/praznici/static/css/2.f4c56af9.chunk.css.map",
+    "static/css/main.cfe3171d.chunk.css.map": "/praznici/static/css/main.cfe3171d.chunk.css.map",
+    "static/js/2.7cf6a992.chunk.js.LICENSE.txt": "/praznici/static/js/2.7cf6a992.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2502ecd9.js",
+    "static/css/2.f4c56af9.chunk.css",
+    "static/js/2.7cf6a992.chunk.js",
+    "static/css/main.cfe3171d.chunk.css",
+    "static/js/main.a4754a47.chunk.js"
+  ]
+}
